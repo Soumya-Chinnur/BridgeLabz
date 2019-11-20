@@ -10,5 +10,5 @@ const take = require("../Gambler/gamblerBl")
 const read = require('readline-sync')
 const stake = read.question("Enter num of stake");
 const goal = read.question("Enter the num of goal");
-const n = read.question("Enter the number");
-take.gambler(stake, goal, n)
+const number = read.question("Enter the number");
+take.gambler(stake, goal, number)

@@ -6,5 +6,5 @@
 **/
 const take = require("../Array/sumOf3numBl")
 const read = require('readline-sync')
-const n = read.question("Enter the number");
-take.sumOf3num(n);
+const number = read.question("Enter the number");
+take.sumOf3num(number);

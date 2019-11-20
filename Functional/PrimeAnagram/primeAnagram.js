@@ -8,8 +8,8 @@
 //const take = require("../PrimeAnagram/primeAnagramBl")
 const util = require("../../Utility/algorithmUtility")
 const read = require('readline-sync')
-var primeArray = util.primeGenerate(1000);
-var anagramPrimeArray = util.anagramprime(primeArray);
+const primeArray = util.primeGenerate(1000);
+const anagramPrimeArray = util.anagramprime(primeArray);
 console.log(anagramPrimeArray);
-var n = read.question("Enter the number");
-var bubble = util.bubbleSort(n);
+const number = read.question("Enter the number");
+const bubble = util.bubbleSort(number);

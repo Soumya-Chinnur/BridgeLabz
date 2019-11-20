@@ -7,5 +7,5 @@
  **/
 const take  = require("../Prime/primeFactorsBl")
 const read = require('readline-sync');
-var n = read.question("enter the number");
-take.primeFactors(n);
+const number = read.question("enter the number");
+take.primeFactors(number);

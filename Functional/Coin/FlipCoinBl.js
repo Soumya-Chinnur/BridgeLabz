@@ -1,11 +1,11 @@
 
-exports.FlipCoin = (n) => {
+exports.FlipCoin = (number) => {
     {
-        var head = 0;
-        var tail = 0;
-        var x;
-        for (let i = 0; i < n; i++) {
-            if (n > 0) {
+        const head = 0;
+        const tail = 0;
+        const x;
+        for (let i = 0; i < number; i++) {
+            if (number > 0) {
                 x = Math.random();
                 if (x > 0.5) {
                     head++;
@@ -15,8 +15,8 @@ exports.FlipCoin = (n) => {
                 }
             }
         }
-        const h_per = (head / n) * 100;
-        const t_per = (tail / n) * 100;
+        const h_per = (head / number) * 100;
+        const t_per = (tail / number) * 100;
         console.log(h_per);
         console.log(t_per);
     }

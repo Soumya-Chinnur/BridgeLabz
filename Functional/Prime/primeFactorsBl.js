@@ -1,15 +1,15 @@
-exports.primeFactors=(n)=>{
+exports.primeFactors=(number)=>{
 
-    for(var i=2; i<n; i++)
+    for(let i=2; i<number; i++)
     {
-        while(n%i==0)
+        while(number%i==0)
         {
             console.log("prime factors" + i)
-            n = n/2;
+            number = number/2;
         }
-        if(n>2)
+        if(number>2)
         {
-            console.log(n);
+            console.log(number);
         }
     }
 }

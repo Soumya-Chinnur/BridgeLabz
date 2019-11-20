@@ -7,5 +7,5 @@
  */
 const take = require("../Power/powerOf2Bl")
 const read = require('readline-sync')
-const n = read.question("Enter the number");
-take.powerOf2(n);
+const number = read.question("Enter the number");
+take.powerOf2(number);

@@ -7,5 +7,5 @@
  */
 const take = require("../../Utility/algorithmUtility")
 const read = require('readline-sync')
-const n = read.question("enter the array range");
-take.insertionSort(n);
+const number = read.question("enter the array range");
+take.insertionSort(number);

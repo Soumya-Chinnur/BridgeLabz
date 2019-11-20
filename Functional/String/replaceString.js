@@ -7,5 +7,5 @@
  */
 var take = require("../replaceStringBlogic")
 var read = require("readline-sync")
-var str = read.question("Enter the name");
-take.replaceString(str);
+var string = read.question("Enter the name");
+take.replaceString(string);

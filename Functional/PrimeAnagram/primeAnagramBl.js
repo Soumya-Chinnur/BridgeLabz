@@ -1,8 +1,8 @@
 exports.primeAnagram = () => {
     try {
-        for (var no = 1; no <= name; no++) {
+        for (let no = 1; no <= name; no++) {
             var temp = 0;
-            for (var j = 2; j <= i - 1; j++) {
+            for (let j = 2; j <= i - 1; j++) {
                 if (no % j == 0) {
                     temp = temp + 1;
                 }

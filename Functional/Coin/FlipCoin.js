@@ -7,5 +7,5 @@
  */
 const take = require("./FlipCoinBl")
 const read = require('readline-sync')
-const n = read.question("Enter the number");
-take.FlipCoin(n)
+const number = read.question("Enter the number");
+take.FlipCoin(number)

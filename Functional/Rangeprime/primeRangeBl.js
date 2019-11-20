@@ -1,5 +1,5 @@
-exports.primeRange = (n) => {
-    for (var i = 1; i <= n; i++) {
+exports.primeRange = (number) => {
+    for (var i = 1; i <= number; i++) {
         var temp = 0;
         for (var j = 2; j <= i - 1; j++) {
             if (i % j == 0) {
@@ -13,14 +13,14 @@ exports.primeRange = (n) => {
     var sum = 0;
     var res = 0;
     var count;
-    count = n;
-    while (parseInt(n) > 0)//parseInt is necessary so that it wont take any extra decimal value
+    count = number;
+    while (parseInt(number) > 0)//parseInt is necessary so that it wont take any extra decimal value
     {
-        res = parseInt(n) % 10;
+        res = parseInt(number) % 10;
         //console.log(res);
         sum = (sum * 10) + parseInt(res);
         //console.log(sum);
-        n = parseInt(n) / 10;
+        number = parseInt(number) / 10;
     }
     if (count == sum) {
         console.log("palindrome");

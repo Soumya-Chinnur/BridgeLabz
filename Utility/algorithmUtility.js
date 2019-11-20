@@ -1,10 +1,10 @@
-exports.primeGenerate=(n)=>
+exports.primeGenerate=(number)=>
 { 
-    var primeArray=[];
-    for(var i = 1; i<=n; i++)
+    const primeArray=[];
+    for(let i = 1; i<=number; i++)
     {
-        var temp = 0;
-        for(var j = 2; j<=i-1 ;j++)
+        const temp = 0;
+        for(let j = 2; j<=i-1 ;j++)
         {
             if(i%j==0)
             {
@@ -21,7 +21,7 @@ exports.primeGenerate=(n)=>
 }
 exports.anagramprime = (primeArray)=>
 {
-    var anagram=[];
+    const anagram=[];
 for(let j = 0; j<primeArray.length; j++)
 {
     for(let k = j + 1; k<primeArray.length; k++)
@@ -54,12 +54,12 @@ checkAnagram = (numberOne, numberTwo)=>{
 exports.bubbleSort=(a)=>
 {
   //  var a = [36, 19, 29, 12, 5];
-    var temp;
-    for(var i=0; i<a.length; i++)
+    const temp;
+    for(let i=0; i<a.length; i++)
     {
-        for(var j=0; j<a.length-1-i; j++)
+        for(let j=0; j<a.length-1-i; j++)
         {
-            var flag = 0;
+            let flag = 0;
             if(a[j]>a[j+1])
             {
                 temp = a[j];
@@ -87,8 +87,8 @@ exports.Anagram = (str1, str2) => {
             console.log("Strings are not anagram");
         }
         else {
-            var s1 = str1.split("");//splits the given string into array of string by separting substrings using separator
-            var s2 = str2.split("");
+            const s1 = str1.split("");//splits the given string into array of string by separting substrings using separator
+            const s2 = str2.split("");
         }
         s1 = s1.sort();
         console.log(s1);
@@ -112,7 +112,7 @@ BinarySearch
 exports.binarySearch = (a, search) => {
     try {
         a = a.sort();
-        var li = 0;
+        const li = 0;
         hi = a.length - 1;
         mi = Math.floor((li + hi) / 2);//Math.floor returns largest integer less than or equal to given number 
 
@@ -135,12 +135,12 @@ exports.binarySearch = (a, search) => {
 /*
 Bubblesort
 */
-exports.bubbleSort = (n) => {
-    var a = [36, 19, 29, 12, 5];
-    var temp;
-    for (var i = 0; i < n; i++) {
-        for (var j = 0; j < n - 1 - i; j++) {
-            var flag = 0;
+exports.bubbleSort = (number) => {
+    const a = [36, 19, 29, 12, 5];
+    const temp;
+    for (let i = 0; i < number; i++) {
+        for (let j = 0; j < number - 1 - i; j++) {
+            let flag = 0;
             if (a[j] > a[j + 1]) {
                 temp = a[j];
                 a[j] = a[j + 1];
@@ -153,18 +153,18 @@ exports.bubbleSort = (n) => {
             break;
         }
     }
-    for (var i = 0; i < a.length; i++) {
+    for (let i = 0; i < a.length; i++) {
         console.log(a[i] + " ");
     }
 }
 /*
 Insertion sort
 */
-exports.insertionSort = (n) => {
+exports.insertionSort = (number) => {
     try {
-        var a = [5, 1, 6, 2, 4, 3];
-        var temp, j;
-        for (var i = 1; i < n; i++) {
+        const a = [5, 1, 6, 2, 4, 3];
+        const temp, j;
+        for (let i = 1; i < number; i++) {
             temp = a[i];
             j = i;
             while (j > 0 && a[j - 1] > temp) {
@@ -173,7 +173,7 @@ exports.insertionSort = (n) => {
             }
             a[j] = temp;
         }
-        for (var i = 0; i < n; i++) {
+        for (let i = 0; i < number; i++) {
             console.log(a[i]);
         }
     }

@@ -7,5 +7,5 @@
  */
 const take  = require("../Year/leapYearBl")
 const read = require('readline-sync')
-const yr = read.question("Enter the year");
-take.leapyear(yr);
+const year = read.question("Enter the year");
+take.leapyear(year);

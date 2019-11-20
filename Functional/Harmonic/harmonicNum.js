@@ -7,5 +7,5 @@
  */
 const take = require("../Harmonic/harmonicNumBl")
 const read = require('readline-sync');
-var n = read.question("Enter the number");
-take.harmonicNum(n)
+const n = read.question("Enter the number");
+take.harmonicNum(number)

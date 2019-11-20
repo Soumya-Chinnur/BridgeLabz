@@ -7,10 +7,10 @@
  */
 const take = require("../../Utility/algorithmUtility")
 const read = require('readline-sync')
-const n = read.question("Enter the number");
+const number = read.question("Enter the number");
 //var a=[];
 //for(var i=0; i<n; i++)
 //{
 //a[i] = read.question("Enter the elements");
 //}
-take.bubbleSort(n);s
+take.bubbleSort(number);

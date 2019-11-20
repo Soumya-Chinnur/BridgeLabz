@@ -1,8 +1,8 @@
-exports.leapyear = (yr) => {
+exports.leapyear = (year) => {
     {
         try {
-            if ((yr % 400 == 0) && (yr % 100 != 0) || (yr % 4 == 0)) {
-                console.log("leap year" + yr);
+            if ((year % 400 == 0) && (year % 100 != 0) || (year % 4 == 0)) {
+                console.log("leap year" + year);
             }
             else {
                 console.log("not leap year");

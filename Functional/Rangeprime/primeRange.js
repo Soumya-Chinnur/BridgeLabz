@@ -7,5 +7,5 @@
  */
 const take = require("../Rangeprime/primeRangeBl")
 const read = require('readline-sync')
-const n = read.question("Enter the number");
-take.primeRange(n);
+const number = read.question("Enter the number");
+take.primeRange(number);
