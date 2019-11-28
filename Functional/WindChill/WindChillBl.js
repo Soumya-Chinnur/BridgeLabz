@@ -5,7 +5,7 @@ exports.WindChill = (v, t) => {
             console.log("not valid");
         }
         else {
-            w = 35.74 + 0.6215 * t + (0.4275 * t - 35.75) * v ^ 0.16;
+            w = 35.74 + 0.6215 * t + (0.4275 * t - 35.75) * v ^ 0.16;//calculating wind chill
             console.log(w);
 
         }
