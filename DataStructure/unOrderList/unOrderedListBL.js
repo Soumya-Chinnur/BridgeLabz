@@ -3,7 +3,7 @@ module.exports = {
         /*
         *create  a new object of linked list
         */
-        var list = new linkedList;
+        let list = new linkedList;
         /*
         *add all the elements for linked list
         */
@@ -29,7 +29,7 @@ module.exports = {
         /*
         * write operation save updated file into list
         */
-        var dataWrite = list.show();
+        let dataWrite = list.show();
         console.log(dataWrite);
         writeToFile("./stringList.txt", dataWrite);
     }
@@ -60,12 +60,12 @@ class linkedList {
         /**
          * creating new node
          */
-        var node = new Node(searchWord);
+        let node = new Node(searchWord);
         /**
          * 
          * to store current node
          */
-        var current;
+        let current;
         /**
          * if list is empty add an searchword and make it head
          */
@@ -86,8 +86,8 @@ class linkedList {
      * remove the string, if it already exists
      */
     remove(searchWord) {
-        var current = this.head;
-        var previous = null;
+        let current = this.head;
+        let previous = null;
         while (current != null) {
             if (current.data = searchWord) {
                 if (previous == null) {//if first element is searchWord
@@ -115,8 +115,8 @@ class linkedList {
      * check the search word already present or not
      */
     search(searchWord) {
-        var count = 0;
-        var current = this.head;
+        let count = 0;
+        let current = this.head;
         while (current != null) {
             if (current.data = searchWord) {
                 console.log(3);
@@ -131,8 +131,8 @@ class linkedList {
         /**
         * print the given list after performing changes.
         */
-        var current = this.head;
-        var string = "";
+        let current = this.head;
+        let string = "";
         while (current) {
             string += current.searchWord;
             current = current.next;

@@ -1,32 +1,32 @@
-exports.checkPalindrome=(word)=>{
-        /**
-         * create a new deque
-         */
-        var deque = new Deque();
-        wordArray = word.toString().split(''); //insert each character to deque
-        /**
-         * loop iterate each character of word
-         */
-        for (let i = 0; i < wordArray.length; i++) {
-            deque.addFront(wordArray[i]);//insert each character to deque
-        }
-        deque.display();
-        var flag = 1;
-        /*the while loop to iterate to size 1*/
-        while (deque.size() > 1) {
-            var front = deque.removeFront();//remove one character from front
-            var rear = deque.removeRear();//remove one character from rear
-            if (front != rear) {
-                flag = 0;
-            }
-        }
-        if (flag == 1) {
-            console.log("the word is palindrome");
-        }
-        else {
-            console.log("the word is not palindrome")
+exports.checkPalindrome = (word) => {
+    /**
+     * create a new deque
+     */
+    let deque = new Deque();
+    wordArray = word.toString().split(''); //insert each character to deque
+    /**
+     * loop iterate each character of word
+     */
+    for (let i = 0; i < wordArray.length; i++) {
+        deque.addFront(wordArray[i]);//insert each character to deque
+    }
+    deque.display();
+    let flag = 1;
+    /*the while loop to iterate to size 1*/
+    while (deque.size() > 1) {
+        let front = deque.removeFront();//remove one character from front
+        let rear = deque.removeRear();//remove one character from rear
+        if (front != rear) {
+            flag = 0;
         }
     }
+    if (flag == 1) {
+        console.log("the word is palindrome");
+    }
+    else {
+        console.log("the word is not palindrome")
+    }
+}                                                                                                                                                                                        
 
 class Deque {
     constructor() {
@@ -52,7 +52,7 @@ class Deque {
             console.log("empty");
         }
         else {
-            var string = '';
+            let string = '';
             /**
              * loop iterate upto deque size
              */
@@ -63,3 +63,4 @@ class Deque {
         }
     }
 }
+                                                                                                                                                              

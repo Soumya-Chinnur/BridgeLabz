@@ -1,48 +1,48 @@
-exports.bankTransaction=(balance, num)=> {
-        try {
-            /**
-             * create a new queue. 
-             **/
-            var queue = new Queue();
-            for (let i = 0; i < num; i++) {
-                queue.enQueue(i); //insert the people rear of the queue
-            }
-            while (queue.length()) {
-                var option = readline.question("Press 1 to deposit money and Press 2 to withdrawal money: ");
-                /*
-                * deposit the amount is option 1
-                */
-                if (option == 1) {
-                    var deposit = readline.question("Enter the amount to deposit: ");
-                    balance = (parseInt(balance) + parseInt(deposit)); //deposit amount added to the balance
-                    console.log("Total Balance is= " + balance); //print balance
-                }
-                /*
-                * withdraw the amount by people
-                */
-                else if (option == 2) {
-                    var withdrawAmount = readline.question("Enter the amount to withdrawal: ");
-                    if (balance >= withdrawAmount) {             //check withdraw amount 
-                        balance = balance - withdrawAmount;
-                        console.log("Total balance:" + balance);
-                    }
-                    /*
-                    * bank balance is zero 
-                    */
-                    else {
-                        console.log("Running out of balance..");
-                    }
-                }
-                else {
-                    console.log("plz enter correct option...");
-                }
-                queue.deQueue();   //queue dequeue operation
-            }
+exports.bankTransaction = (balance, people) => {
+    try {
+        /**
+         * create a new queue. 
+         **/
+        let queue = new Queue();
+        for (let i = 0; i < people; i++) {
+            queue.enQueue(i); //insert the people rear of the queue
         }
-        catch (error) {
-            console.log(error);
+        while (queue.length()) {
+            let option = readline.question("Press 1 to deposit money and Press 2 to withdrawal money: ");
+            /*
+            * deposit the amount is option 1
+            */
+            if (option == 1) {
+                let deposit = readline.question("Enter the amount to deposit: ");
+                balance = (parseInt(balance) + parseInt(deposit)); //deposit amount added to the balance
+                console.log("Total Balance is= " + balance); //print balance
+            }
+            /*
+            * withdraw the amount by people
+            */
+            else if (option == 2) {
+                let withdrawAmount = readline.question("Enter the amount to withdrawal: ");
+                if (balance >= withdrawAmount) {             //check withdraw amount 
+                    balance = balance - withdrawAmount;
+                    console.log("Total balance:" + balance);
+                }
+                /*
+                * bank balance is zero 
+                */
+                else {
+                    console.log("Running out of balance..");
+                }
+            }
+            else {
+                console.log("plz enter correct option...");
+            }
+            queue.deQueue();   //queue dequeue operation
         }
     }
+    catch (error) {
+        console.log(error);
+    }
+}
 class Queue {
     /**
      * create a new constructor to create object of item.

@@ -1,29 +1,25 @@
-class Qnode {
+class Node {
     constructor(data) {
-        this.next = null;
         this.data = data;
+        this.next = null;
     }
 }
 /*
-* creating QueuedLinkedList class to create any new node with null values.
+* creating a StackedLink class to create any new node with null values.
  */
-class QueuedLinkedList {
+class StackedLink {
     constructor() {
-        this.front = null;
-        this.rear = null;
+        this.top = null;
     }
     /*
     * it will add or store the items
     */
-    enque(data) {
+    push(item) {
         try {
-            const temp = new Qnode(data);
-            if (this.rear == null) {
-                this.rear = this.front = temp;
-                return;
-            }
-            this.rear.next = temp;
-            this.rear = temp;
+            const temp = new Node();
+            temp.data = item;
+            temp.next = this.top;
+            this.top = temp;
         }
         catch (error) {
             console.log(error);
@@ -31,25 +27,46 @@ class QueuedLinkedList {
     }
     display() {
         try {
-            const result = '';
-            const t = this.front;
-            while (t != null) {
-                //console.log(t.data);
-                result = result + t.data;
-                if (t.next != null)
-                    result = result + " ";
-                t = t.next;
+            if (this.top == null) {
+                console.log("Stack Underflowed");
+                return;
             }
-            console.log(result);
+            else {
+                const temp = this.top;
+                const show = "";
+                while (temp != null) {
+                    show = show + temp.data;
+                    if (temp.next != null) {
+                        show = show + " --> "
+                    }
+                    temp = temp.next;
+                }
+                console.log(show);
+            }
         }
         catch (error) {
             console.log(error);
         }
     }
+    displayReverse(top) {
+        try {
+            if (top == null)
+                return;
+            console.log(top.data);
+            if (top.next != top)
+                console.log(" --> ");
+            this.displayReverse(top.next);
+        }
+        catch (error) {
+            console.log(error);
+        }
+    }
+    getHead() {
+        return this.top;
+    }
 }
-/**
-* exports:if a object that get exposed to a module and it is by default in every js file.
+/*exports:if a object that get exposed to a module and it is by default in every js file.
 **/
 module.exports = {
-    QueuedLinkedList
+    StackedLink
 }
