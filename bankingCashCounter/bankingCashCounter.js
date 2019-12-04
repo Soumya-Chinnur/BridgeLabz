@@ -4,9 +4,9 @@
 *           Maintain the Cash Balance.
 * @file    :bankingCashCounter.js
 * @author  : Soumya Chinnur
-*********************************************************************************************/
+**********************************************************************************/
 const readline = require("readline-sync");
-let balance = readline.question("Enter Initial Bank Balance"); //initial balance of bank
+const balance = readline.question("Enter Initial Bank Balance"); //initial balance of bank
 let people = readline.question("Enter Number Of People");     //Number of people in queue
 let bank = require('../bankingCashCounter/bankingCashCounterBL'); //import the bankingcashCounter.js file
 bank.bankTransaction(balance, people); //queue operation
