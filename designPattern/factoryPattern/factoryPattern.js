@@ -1,8 +1,8 @@
-/**************************************
+/***********************************************************************
  * @purpose :Demonstrate factory pattern.
  * @file    :factoryPattern.js
  * @author  :Soumya Chinnur
- *************************************/
+ *************************************************************************/
 /**
  * @purpose : Factory method creates the object based on type
  */
@@ -23,7 +23,7 @@ function Factory() {
             console.log(this.type + ": Price " + this.price + " Rs");
         }
 
-        return computer;
+        return computer;//returning computer
     }
 }
 var PC = function () {
