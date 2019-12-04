@@ -4,7 +4,7 @@
 *           100-200, and so on. While the second dimension represents the prime numbers in that range. 
 *@file    :primeAnagramInTwoD.js
 *@author  :Soumya Chinnur
-**********************************************/
+*****************************************************************************************/
 let util = require('../../Utility/algorithmUtility');
 let initial = 0;
 let limit = 100;
@@ -23,8 +23,8 @@ for (let i = 0; i < 10; i++) {
     limit = limit + 100;
 
 }
-//print the array
-let initial = 0;
+//print the array..
+const initial = 0;
 let limit = 100;
 for (let i = 0; i < 10; i++) {
     console.log("Anagram [" + initial + "," + limit + "] : " + anagramPrimeArray[i]);
