@@ -7,47 +7,62 @@
 * File    : inventoryDataManagement.js
 * Author  : Soumya Chinnur
 *************************************/
-var prompt = require('prompt-sync')();//node-module prompt-sync
-var util = require('./grocery')
-var fs = require('fs');
+let prompt = require('prompt-sync')();//node-module prompt-syn
+let util = require('./grocery')
+let fs = require('fs');
 try {
     /*
     * function JSON.parse() is used to convert the string into a JavaScript Objects
     */
-    var jsonInventory = JSON.parse(fs.readFileSync('./inventory.json')); //read file from json
+   let jsonInventory = JSON.parse(fs.readFileSync('./inventory.json')); //read file from json
 
     console.log("Json file data", jsonInventory);
     console.log("*****Rice Items******");
-    var riceLength = jsonInventory.Rice.length;
+    let = riceLength = jsonInventory.Rice.length;
     for (let i = 0; i < riceLength; i++) {
-        var name = jsonInventory.Rice[i].name;
-        var weight = jsonInventory.Rice[i].weight;
-        var price = jsonInventory.Rice[i].price;
+
+let name = jsonInventory.Rice[i].name;
+
+let weight = jsonInventory.Rice[i].weight;
+
+let price = jsonInventory.Rice[i].price;
         console.log("Name : " + name + "\nTotal Weight: " + weight + "\nPrice /Kg : " + price)
-        var rice = new util.Rice(name, weight, price)
-        var total = rice.total();
+
+let rice = new util.Rice(name, weight, price)
+
+let total = rice.total();
         console.log("Total price of rice : " + total + "Rs");
     }
-    var wheatLength = jsonInventory.Wheats.length;
+    let wheatLength = jsonInventory.Wheats.length;
     console.log("*****Wheat Items******");
     for (let i = 0; i < wheatLength; i++) {
-        var name = jsonInventory.Wheats[i].name;
-        var weight = jsonInventory.Wheats[i].weight;
-        var price = jsonInventory.Wheats[i].price;
+
+let name = jsonInventory.Wheats[i].name;
+
+let weight = jsonInventory.Wheats[i].weight;
+
+let price = jsonInventory.Wheats[i].price;
         console.log("Name : " + name + "\nTotal Weight: " + weight + "\nPrice /Kg : " + price)
-        var wheat = new util.Wheat(name, weight, price);
-        var total = wheat.total();
+
+let  wheat = new util.Wheat(name, weight, price);
+
+let total = wheat.total();
         console.log("Total value of wheats : " + total + "Rs");
     }
-    var pulseLength = jsonInventory.Pulses.length;
+    let pulseLength = jsonInventory.Pulses.length;
     console.log("*****Pulses Items******");
     for (let i = 0; i < pulseLength; i++) {
-        var name = jsonInventory.Pulses[i].name;
-        var weight = jsonInventory.Pulses[i].weight;
-        var price = jsonInventory.Pulses[i].price;
+
+let name = jsonInventory.Pulses[i].name;
+
+let weight = jsonInventory.Pulses[i].weight;
+
+let price = jsonInventory.Pulses[i].price;
         console.log("Name : " + name + "\nTotal Weight: " + weight + "\nPrice /Kg : " + price)
-        var pulse = new util.Pulse(name, weight, price);
-        var total = pulse.total();
+
+let pulse = new util.Pulse(name, weight, price);
+
+let total = pulse.total();
         console.log("Total value of pulses : " + total + "Rs");
     }
 }
