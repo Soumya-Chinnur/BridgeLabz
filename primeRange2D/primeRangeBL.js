@@ -1,3 +1,6 @@
+/**
+ * 
+ */
 exports.primeRange = (start, end) => {
     let array = [];
     for (let i = start; i <= end; i++) {//looping till the given range

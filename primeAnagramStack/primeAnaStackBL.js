@@ -1,3 +1,6 @@
+/**
+ * class Node template for create stack 
+ */
 class Node {
     constructor(data) {
         this.data = data;
@@ -11,8 +14,9 @@ class StackedLink {
     constructor() {
         this.top = null;
     }
-    /*
-    * it will add or store the items
+   /**
+    * 
+    * @param {*} item 
     */
     push(item) {
         try {
@@ -25,6 +29,9 @@ class StackedLink {
             console.log(error);
         }
     }
+    /**
+     * 
+     */
     display() {
         try {
             if (this.top == null) {
@@ -48,6 +55,10 @@ class StackedLink {
             console.log(error);
         }
     }
+    /**
+     * 
+     * @param {*} top 
+     */
     displayReverse(top) {
         try {
             if (top == null)
@@ -65,8 +76,7 @@ class StackedLink {
         return this.top;
     }
 }
-/*exports:if a object that get exposed to a module and it is by default in every js file.
-**/
+
 module.exports = {
     StackedLink
 }

@@ -15,7 +15,6 @@ function printAnagramPrime() {
         for (let i = 0; i < anagramPrime.length; i++) {
             stackLink.push(anagramPrime[i]);
         }
-        console.log();
         console.log("------Anagram Stack------");
         stackLink.display();
          top = stackLink.getHead();
