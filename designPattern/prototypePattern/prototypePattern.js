@@ -3,7 +3,7 @@
 * file :prototypePattern.js
 * author :Soumya Chinnur
 *****************************************************************************************/
-function student(name, age) {
+function student(name, age, add) {
     this.name = name;
     this.age = age;
     this.say = () => {
