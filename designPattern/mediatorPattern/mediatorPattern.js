@@ -5,7 +5,7 @@
 * file : mediatorPattern.js
 * author : Soumya Chinnur
 
-*************************************************************************************** /
+***************************************************************************** /
 /**
 * @purpose :chat workes as a mediator between two user object.
 */
@@ -36,8 +36,8 @@ class User {
         cr.showMessage();
     }
 }
-let user1 = new User();
-let user2 = new User();
+let user1 = new User();//creating user1
+let user2 = new User();//creating user2
 
 user1.setName("Rohan");
 user2.setName("Alexa");
