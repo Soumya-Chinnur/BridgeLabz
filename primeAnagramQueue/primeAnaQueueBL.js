@@ -13,7 +13,7 @@ class QueuedLinkedList {
         this.rear = null;
     }
     /*
-    * it will add or store the items
+    * it will add or store the items into the queue
     */
     enque(data) {
         try {
@@ -31,7 +31,7 @@ class QueuedLinkedList {
     }
     display() {
         try {
-            const result = '';
+            let result = '';
             const t = this.front;
             while (t != null) {
                 //console.log(t.data);

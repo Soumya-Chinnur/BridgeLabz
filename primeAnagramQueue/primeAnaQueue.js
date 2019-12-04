@@ -4,11 +4,11 @@
  *            Collection Library can be used.
  * @Author : Soumya Chinnur
  * @file : primeAnaQueue.js
- *******************************************************************************************/
+ **********************************************************************************/
 const primeAnagram = require('../../Functional/PrimeAnagram');
 const primeAnaQueue = require('../primeAnagramQueue/primeAnaQueueBL');
 try {
-    const queueLink = new primeAnaQueue.QueuedLinkedList;
+  let queueLink = new primeAnaQueue.QueuedLinkedList;
     const primes = [];
     const initial = 0;
     const final = 1000;
