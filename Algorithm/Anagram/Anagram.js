@@ -7,6 +7,6 @@
  */
 const take = require("../../Utility/algorithmUtility")
 const read = require('readline-sync')
-const str1 = read.question("Enter the String1");
-const str2 = read.question("Enter the string2");
+let  str1 = read.question("Enter the String1 : -");
+let  str2 = read.question("Enter the string2 :-");
 take.Anagram(str1, str2);

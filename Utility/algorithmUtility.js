@@ -175,6 +175,13 @@ Merge Sort
 //Merges two subarrays of arr[]
 //first subarray is arr[1..m]
 //second subarray is arr[m+1..r]
+/**
+ * 
+ * @param {*} unsortedArray 
+ * @param {*} low 
+ * @param {*} mid 
+ * @param {*} high 
+ */
 function merge(unsortedArray, low, mid, high) {
     //Find size of two subbarray to be merged
     var lengthOne = mid - low + 1;
@@ -227,6 +234,9 @@ function merge(unsortedArray, low, mid, high) {
 
 
 //returns sorted array
+/**
+ * 
+ */
 exports.mergeSort = (unsortedArray, low, high) => {
     if (low < high) {
         //Find middle point
@@ -254,18 +264,12 @@ exports.getAllPermutation = (string) => {
     }
 }
 
-for (var i = 0; i < string.length; i++) {
-    //console.log("i is"+i)
+for (let i = 0; i < string.length; i++) {
     const firstChar = string[i];
-    //console.log("first char "+firstchar)
-    var charsLeft = string.substring(0, i) + string.substring(i + 1);
-    //console.log("chars left "+charsleft)
-    var innerpermutations = getAllpermuation(charsleft);
-    //console.log("inner "+innerPermutations)
+    let charsLeft = string.substring(0, i) + string.substring(i + 1);
+    var innerpermutations = getAllpermuation(charsLeft);
     for (let j = 0; j < innerpermutations.length; j++) {
-        //console.log(" j"+j)
         results.push(firstChar + innerPermutations[j]);
-        //console.log('result for'+result)
     }
 }
 return results;
