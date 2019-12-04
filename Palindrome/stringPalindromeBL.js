@@ -1,6 +1,6 @@
 exports.checkPalindrome = (word) => {
     /**
-     * create a new deque
+     * create a new deque array
      */
     let deque = new Deque();
     wordArray = word.toString().split(''); //insert each character to deque
@@ -54,7 +54,7 @@ class Deque {
         else {
             let string = '';
             /**
-             * loop iterate upto deque size
+             * loop iterate upto deque size...,.
              */
             for (let i = 0; i < this.items.length; i++) {
                 string = string + " " + this.items[i];
