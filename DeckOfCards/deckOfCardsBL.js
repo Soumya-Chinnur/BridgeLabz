@@ -3,7 +3,7 @@
 * @File    :deckOfCardBLogic.js
 * @Author  :Soumya Chinnur
 ************************************************/
-var deck = new Array();
+let deck = new Array();
 /*
  * @description :  deckOfCard
  * @purpose:   it accepts suits and values and creating deck of cards using array
@@ -32,7 +32,7 @@ module.exports.shuffle = (deck) => {
     try {
         var n = deck.length;
         for (i = 0; i < n; i++) {
-            var r = i + parseInt(Math.random() * (n - i));
+            let r = i + parseInt(Math.random() * (n - i));
             /**
              * swapping
              */
@@ -50,7 +50,7 @@ module.exports.shuffle = (deck) => {
  */
 module.exports.distribute = (deck) => {
     try {
-        var players = [[], [], [], []];
+        let players = [[], [], [], []];
         let start = 0, end = 9;
         for (let i = 0; i < 4; i++) {
             /** 

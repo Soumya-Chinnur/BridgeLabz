@@ -1,8 +1,8 @@
-/******************************************* 
+/******************************************************************* 
 * @Purpose : Linked list data structure to maintain the company shares
 * @File    :sharesLinkedList.js
 * @Author  :Soumya Chinnur
-************************************************/
+********************************************************************/
 /**
  * @purpose : class node to create node
  */
