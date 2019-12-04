@@ -69,7 +69,7 @@ class linkedList {
         }
         else {
             /**
-           * to         store current node 
+           * to store current node 
            **/
             let  current = this.head;
             var previous, count = 0;
