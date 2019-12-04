@@ -25,8 +25,8 @@ addressOperations = (jsonFile) => {
 editPerson = (jsonFile) => {
     let i = input.questionInt("Enter the index number of the person:")
     let content = input.questionInt("press \n '1' to edit FirstName \n '2' to edit LastName \n '3' to edit Adress \n '4' to edit City \n '5'to edit PhoneNumber\n:")
-    console.log(jsonFile[i])
-    let update = input.question("Enter the new feature:")
+    console.log(jsonFile[i]);
+    let update = input.question("Enter the new feature:");
     switch (content) {
         case 1:
             jsonFile[i].FirstName = update;
