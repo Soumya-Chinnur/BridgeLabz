@@ -17,7 +17,7 @@ BalParentheses = (exp) => {
     if (Stack1.size === 0) {
         console.log("The Parentheses are Perfectly Balanced!");
     } else {
-        console.log("The parentheses are Not Balanced")
+        console.log("The parentheses are Not Balanced");
     }
 }
 module.exports = {
