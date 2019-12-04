@@ -1,10 +1,10 @@
-/******************************************* 
+/****************************************************************************** 
 * @Purpose : Maintain the List of CompanyShares in a Linked List.
 *            So new CompanyShares can be added or removed easily.
 * @File    :companySharesManage.js
 * @Author  :Riyazuddin K
 * @Date    :13-11-2019
-************************************************/
+**********************************************************************************/
 /** 
 * @purpose : file system to read and write file
 */
@@ -20,15 +20,15 @@ const prompt = require('prompt-sync')();
 /**
  * @purpose : Create object of linked list
  */
-var list = new linkedList();
+let list = new linkedList();
 /**
  * @purpose : Read the json file.
  */
-var data = fs.readFileSync('./companyShares.json')
+let data = fs.readFileSync('./companyShares.json')
 /**
  * @purpose :JSON.parse() to convert text into a JavaScript object
  */
-var companySharesJson = JSON.parse(data);
+let companySharesJson = JSON.parse(data);
 /**
  * @purpose :Manage the shares linked list
  */
@@ -46,7 +46,7 @@ function sharesManage() {
         });
         while (1) {
             console.log(menu);
-            var choice = prompt("Enter one option :")
+            let choice = prompt("Enter one option :")
             switch (parseInt(choice)) {
                 case 1:
                     var company = prompt("Enter the new company name: ");
