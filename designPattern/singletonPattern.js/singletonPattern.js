@@ -2,8 +2,7 @@
 /**************************************
  * @purpose :Demonstrate singleton pattern.
  * @file    :singletonPattern.js
- * @author  :Riyazuddin K
- * @date    :19-11-2019
+ * @author  :Soumya Chinnur
  *************************************/
 /**
  * @purpose :To create one instance and return it.
