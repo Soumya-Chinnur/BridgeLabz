@@ -1,49 +1,50 @@
-/***********************************************************************
- * @purpose :Demonstrate factory pattern.
- * @file    :factoryPattern.js
- * @author  :Soumya Chinnur
- *************************************************************************/
-/**
- * @purpose : Factory method creates the object based on type
- */
-function Factory() {
-    this.createComputer = function (type) {
-        var computer;
-        if (type === "PC") {
-            computer = new PC();
-        }
-        else if (type === "Laptop") {
-            computer = new Laptop();
-        }
-        else if (type === "Server") {
-            computer = new Server();
-        }
-        computer.type = type;
-        computer.say = function () {
-            console.log(this.type + ": Price " + this.price + " Rs");
-        }
+/****************************************************************************************
+* @Execution : default node : cmd> factory.js
+* @description :Prints the factory pattern design
+* @overview : Design patterns
+* @author : Soumya Chinnur
+******************************************************************************************/
+try {
+    const FactoryObjects = require('../factory/factoryBL')
+    new FactoryObjects.PC().system();
+    new FactoryObjects.server().system();
+    new FactoryObjects.laptop().system();
+} catch (e) {
+    console.log(e.message)
+}
+//computer is the parent class and children classes are extended from it as shown below
+class computer {
+    constructor() { }
 
-        return computer;//returning computer
+    system() {
+        throw new Error("Method 'system()' must be implemented.");
     }
 }
-var PC = function () {
-    this.price = "20000";
-};
-
-var Laptop = function () {
-    this.price = "30000";
-};
-var Server = function () {
-    this.price = "90000";
-};
-function run() {
-    var computers = [];
-    var factory = new Factory();
-    computers.push(factory.createComputer("PC"));
-    computers.push(factory.createComputer("Laptop"));
-    computers.push(factory.createComputer("Server"));
-    for (var i = 0; i < computers.length; i++) {
-        computers[i].say();
+class PC extends computer {
+    system() {
+        console.log("-------------------------------------------");
+        console.log("PC INFO");
+        console.log("RAM = 4GB", "HDD = 2TB", "CPU = i5/2.8GHz");
     }
 }
-run();
+class laptop extends computer {
+    system() {
+        console.log("--------------------------------------------");
+        console.log("LAPTOP INFO");
+        console.log("RAM = 4GB", "HDD = 500GB", "CPU = i3/2.4GHz");
+    }
+}
+
+class server extends computer {
+    system() {
+        console.log("----------------------------------------");
+        console.log("SERVER INFO");
+        console.log("RAM = 16GB", "HDD = 1TB", "CPU = 2.8GHz");
+    }
+}
+module.exports = {
+    computer,
+    PC,
+    laptop,
+    server
+}
