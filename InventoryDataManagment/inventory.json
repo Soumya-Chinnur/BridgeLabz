@@ -4,11 +4,21 @@
             "name": "WhiteRice",
             "weight": 20,
             "price": 50
+        },
+        {
+            "name": "jeerarice",
+            "weight": 10,
+            "price": 40
         }
     ],
     "Pulses": [
         {
             "name": "KidneyBeans",
+            "weight": 25,
+            "price": 35
+        },
+        {
+            "name": "brownpulse",
             "weight": 15,
             "price": 45
         }
@@ -18,6 +28,11 @@
             "name": "Ashirvad",
             "weight": 22,
             "price": 44
+        },
+        {
+            "name": "vhvgbhjbhg",
+            "weight": 12,
+            "price": 34
         }
     ]
 }
