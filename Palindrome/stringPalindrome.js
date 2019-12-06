@@ -4,7 +4,7 @@
  *            and check whether it is palindrome
  * @author : Soumya Chinnur
  * @file : stringpalindrome.js
- *****************************************************************************************/
+ ********************************************************************************/
 const read = require("readline-sync")
 let take = require('../Palindrome/stringPalindromeBL')
 const word = read.question("Enter a word to check palindrome");
