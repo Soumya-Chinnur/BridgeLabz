@@ -14,9 +14,9 @@ class Grocery {
         return this.weight * this.price;
     }
 }
-class Rice extends Grocery {
+class Rice extends Grocery { //extending parent class
     constructor(name, weight, price) {
-        super(name, weight, price)
+        super(name, weight, price)//pointing to immediate parent
     }
 }
 class Wheat extends Grocery {
