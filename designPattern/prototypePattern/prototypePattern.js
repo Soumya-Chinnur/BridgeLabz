@@ -2,7 +2,7 @@
 *@purpose :Demonstrate prototype pattern.(clone the existing object into a new object)
 * file :prototypePattern.js
 * author :Soumya Chinnur
-*************************************************************************************/
+*************************************************************/
 function student(name, age, add) {
     this.name = name;
     this.age = age;

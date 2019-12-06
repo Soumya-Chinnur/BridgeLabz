@@ -4,8 +4,7 @@
     * help in implementing loose - coupling between objects. )
 * file : mediatorPattern.js
 * author : Soumya Chinnur
-
-***************************************************************************** /
+*************************************************************** /
 /**
 * @purpose :chat workes as a mediator between two user object.
 */

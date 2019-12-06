@@ -1,9 +1,9 @@
 
-/**************************************
+/*****************************************************************
  * @purpose :Demonstrate singleton pattern.
  * @file    :singletonPattern.js
  * @author  :Soumya Chinnur
- *************************************/
+ *****************************************************************/
 /**
  * @purpose :To create one instance and return it.
  */
