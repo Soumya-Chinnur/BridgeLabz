@@ -1,6 +1,6 @@
 [
     {
-        "name": "bca",
+        "name": "bca",//json format
         "shares": 5,
         "price": 200
     },
