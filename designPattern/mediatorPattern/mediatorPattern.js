@@ -24,7 +24,7 @@ class User {
     constructor(name) {
         this.name = name;
     }
-    setName(nm) {
+    setName(nm) { //setting name
         this.name = nm;
     }
     getName() {
