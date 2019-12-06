@@ -1,9 +1,8 @@
-
-/**************************************
+/***************************************************************
 * Purpose : Grocery class for maintain the data.
 * File    : grocery.js
 * Author  : Soumya Chinnur
-*************************************/
+*****************************************************************/
 class Grocery {
     constructor(name, weight, price) {
         this.name = name;

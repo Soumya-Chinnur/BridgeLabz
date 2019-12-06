@@ -1,10 +1,10 @@
-/**************************************
+/******************************************************************
 * Purpose : Create a JSON file having Inventory Details for Rice, 
 *           Pulses and Wheats with properties name, weight, price per kg.
 *           Calculate the value for every Inventory.
 * File    : inventoryDataManagement.js
 * Author  : Soumya Chinnur
-*************************************/
+*******************************************************************/
 let prompt = require('prompt-sync')();//node-module prompt-syn
 let util = require('./grocery')
 let fs = require('fs');

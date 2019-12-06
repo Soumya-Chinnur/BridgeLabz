@@ -1,10 +1,10 @@
-/************************************************************************* 
+/****************************************************************
 * @Purpose : Maintain the List of CompanyShares in a Linked List.
 *            So new CompanyShares can be added or removed easily.
 * @File    :companySharesManage.js
 * @Author  :Riyazuddin K
 * @Date    :13-11-2019
-******************************************************************************/
+*****************************************************************/
 /** 
 * @purpose : file system to read and write file...
 */
