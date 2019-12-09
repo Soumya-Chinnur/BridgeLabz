@@ -1,4 +1,4 @@
-class person{
+class Person{
     constructor(firstName,fullName,mobileNo,date){
         this.firstname=firstName
         this.fullname=fullName
