@@ -1,6 +1,6 @@
 
 //computer is the parent class and children classes are extended from it as shown below
-class computer {
+class Computer {
     constructor() { }//default constructor
 
     system() {

@@ -8,7 +8,7 @@
 /**
 * @purpose :chat workes as a mediator between two user object.
 */
-class chat {
+class Chat {
     constructor(user, message) {
         this.user = user;
         this.message = message;
